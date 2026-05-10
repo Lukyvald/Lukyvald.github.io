@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maturitní práce - 3D animace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- hlavní kontejner pro hlavičku stránky -->
+    <div class="text">
+      <h1>Web pro maturitní práci</h1>
+      <h2>Tvorba animace v programu Blender</h2>
+      <p>Práci jsem si vybral, protože se dlouhodobě věnuji tvorbě ve 3D, animace vznikla na základě zadání přijímacího řízení Fakulty výtvarných umění VUT, konkrétně ateliéru video. Tuto animaci jsem se rozhodl dále rozvinout, proto jsem si ji zvolil jako téma maturitní práce. Animace je inspirována japonským filmem 964 Pinocchio, film jsem si vybral podle zadání FaVU “Pinocchio”. Mým cílem je v práci přiblížit postup a problémy na které jsem narazil při tvorbě animace. 
+</p>
+    </div>
+
+    <!-- Moodboard -->
+    <div class="text">
+      <h2>Moodboard</h2>
+      <p>Moodboard slouží jako první koncepce toho, jak animace bude vypadat. Z filmu jsem vybral momenty, do kterých bych výslednou animaci chtěl esteticky ladit. Slouží jako záchytný bod při tvorbě scén a postavy. Při tvorbě moodboardu jsem narazil na problém zpracovatelnosti některých scén. Jelikož jsem měl přísný deadline, musel jsem vybrat scény, které jsou časově nenáročné na zpracování. Film se odehrává na mnoha místech, ale ne všechna byla pro animaci vhodná.</p>
+      
+      <!-- obrázek moodboardu -->
+      <img src="Moodboard.png" alt="Obrázek moodboardu projektu">
+    </div>
+
+        <!-- Blockout -->
+    <div class="text">
+      <h2>Blockout</h2>
+      <p>Blockout určuje hlavní tvary a kompozici scény, je záměrně jednoduchý a bez textur. Díky jednoduchosti blockoutu je snadné jej upravovat a později s ním pracovat. V této fázi bylo pro mě nejtěžší věrohodně replikovat scénu se záclonou. </p>
+      
+      <!-- Obrázek blockoutu -->
+      <img src="Blockout.png" alt="Obrázek blockoutu projektu">
+    </div>
+    
+        <!-- Modelování postavy -->
+    <div class="text">
+      <h2>Modelování postavy</h2>
+      <p>Při modelování jsem se soustředil jen na specifické části postavy, které budou v animaci viditelné. Především hlavu s obličejem a ruce. Důležité pro mě bylo postavu co nejvíce přiblížit Pinocchiovi z filmu. Původní model postavy jsem získal z programu Character Creator ale upravoval jsem jej pomocí sculptingu v Blenderu. Výhodou modelu z Character Creatoru je, že už má tzv. Kostru, která slouží k animování.</p>
+      
+      <!-- Obrázek modelu -->
+      <img src="Model.png" alt="Obrázek modelu projektu">
+    </div>
+        
+        <!-- Texturování postavy -->
+    <div class="text">
+      <h2>Texturování postavy</h2>
+      <p>Po vymodelování postavy a scén, do kterých bude umístěna, jsem se zaměřil na tvorbu textur. Prvním krokem je příprava modelů k texturování, modely jsem projektoval do 2D mapy pomocí UV unwrappingu. Konkrétně na postavě jsem musel vyznačit švy, které ohraničují jednotlivé UV ostrovy (hlava, ruce). Model jsem poté exportoval z Blenderu ve formátu .fbx a potom importoval do Substance 3D Painter. Painter je program na texturování, ve kterém se model texturuje ve vrstvách, podobně jako Photoshop. Po importu jsem model bakenul, baking vytvoří textury nesoucí informace o modelu (zaoblení, lesk, povrch, apod.). Model jsem v programu otexturoval a textury z něj jsem exportoval ve formátu .png. Při tvorbě textur jsem se snažil napodobit postavu Pinocchia, model jsem musel zrcadlit, což se promítlo do textury. Zrcadlení ale znamená, že jsem mohl použít vyšší rozlišení textury jelikož je promítáná jen polovina modelu.</p>
+      
+      <!-- Obrázek Texturováného modelu -->
+      <img src="Texture.png" alt="Obrázek texturovaného modelu projektu">
+    </div>
+        
+        <!-- Animace -->
+    <div class="text">
+      <h2>Animace</h2>
+      <p>Celkově jsem vytvořil tři scény, jedna scéna pokoje a dvě scény z podzemí s postavou Pinocchia. Animace první scény pokoje byla nejjednodušší, jelikož předloha z filmu je velmi statická až na vlající záclonu. Záclonu jsem animoval pomocí simulace látky v samotném Blenderu. Ve zbylých dvou scénách jsem se zaměřil na části postavy jako obličej a ruce. Vytvořil jsem také blikající světlo, animace mění textury světla podle náhodně určené hodnoty. Čím vyšší je hodnota tím více svítí. Kameru ve všech scénách jsem animoval pomocí pluginu shakify, ten zajistil realistické pohyby kamery. Animace samotné postavy jsem dělal manuálně, ale pro ruce jsem zvolil knihovnu Mixamo. Mixamo obsahuje stovky realistických animací zachycených pomocí motion capture. Při animaci jsem měl problém najít vhodnou motion capture animace rukou. Nakonec jsem zvolil animaci, která se podobala tomu, co jsem chtěl a jen jsem ji v Blenderu upravil.</p>
+    </div>
+        
+        <!-- Střih a sound design -->
+    <div class="text">
+      <h2>Střih a sound design</h2>
+      <p>Zpracované scény s animacemi jsem vyrenderoval v Blenderu do formátu .mp4. Vyrenderovaná videa jsem importoval do VEGAS. Střih obvykle dělám zároveň se sound designem. V praxi to vypadalo tak, že jsem videa zhruba sestříhal dohromady a k nim tvořil zvukovou stopu. Podle vzniklé stopy jsem videa potom dostříhal, aby zvuk a obraz byly synchronizovány. Zkombinoval jsem vlastní knihovnu zvuků a zvuky ze samotného filmu. Výsledná animace trvá přibližně půl minuty.</p>
+        <audio controls>
+        <source src="pinocchio sound design.mp3" type="audio/mpeg" />
+        Váš prohlížeč nepodporuje přehrávání zvuku.
+</audio>
+    </div>
+
+
+        <!-- Závěr -->
+    <div class="text">
+      <h2>Závěr</h2>
+      <p>Na základě animace jsem byl přijat ke studiu na Fakultu výtvarných umění VUT, ateliéru videa. Jsem s ní osobně velmi spokojen. Myslím si, že má uměleckou hodnotu, jelikož ji vedoucí ateliéru velmi ocenili na pohovoru. Tvorba animace rozvinula mé znalosti v oblasti modelování postavy a její samotné animace. Při tvorbě jsem narazil také na nové problémy, které jsem musel kreativně řešit.</p>
+        <video controls>
+  <source src="pinocchio.mp4" type="video/mp4">
+  Váš prohlížeč nepodporuje přehrávání videa.
+</video>
+    </div>
+
+     <div class="text">
+                <p>vytvořil Lukáš Krejčiřík
+</p>
+</div>
+
+
+    
+    
+    
+
+</body>
+</html>

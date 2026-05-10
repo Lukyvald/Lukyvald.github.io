@@ -1,0 +1,21 @@
+
+body {
+  font-family: "Helvetica"; /* font */
+}
+
+
+.text {
+  width: 50%; /* šířka textu */
+  margin: 0 auto; /* zarovnávání na střed */
+  padding: 2rem; /* odsazení textu od okraje pozadí */
+  background-color: #F2F2F2; /* Barva pozadí */
+  color: #111111; /* Barva textu */
+}
+
+img, video {
+  max-width: 100%; /* maximální šířka obrázků a videa */
+}
+
+.text h1 {
+  text-align: center; /* zarovnání hlavního nadpisu na střed */
+}
